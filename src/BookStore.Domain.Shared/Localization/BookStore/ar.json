@@ -29,7 +29,12 @@
     "Enum:BookType.8": "Poetry ar",
     "Books": "Books ar",
     "BookDeletionConfirmationMessage": "Are you sure to delete the book ar '{0}'?",
-    "SuccessfullyDeleted": "Successfully deleted! ar"
+    "SuccessfullyDeleted": "Successfully deleted! ar",
+    "Permission:BookStore": "Book Store ar",
+    "Permission:Books": "Book Management ar",
+    "Permission:Books.Create": "Creating new books ar",
+    "Permission:Books.Edit": "Editing the books ar",
+    "Permission:Books.Delete": "Deleting the books ar"
 
   }
 }

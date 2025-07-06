@@ -3,7 +3,9 @@ using System;
 using System.Threading.Tasks;
 using BookStore.Localization;
 using BookStore.MultiTenancy;
+using BookStore.Permissions;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Volo.Abp.Authorization.Permissions;
 using Volo.Abp.Identity.Web.Navigation;
 using Volo.Abp.SettingManagement.Web.Navigation;
 using Volo.Abp.TenantManagement.Web.Navigation;
@@ -60,13 +62,7 @@ context.Menu.AddItem(
             l["Menu:Books"],
             url: "/Books"
         )
-    ).AddItem(
-        new ApplicationMenuItem(
-            BookStoreMenus.Books,
-            l["Menu:Books"],
-            url: "/Books"
-        )
-    )
+    ).RequirePermissions(BookStorePermissions.Books.Default)
 );
 
         return Task.CompletedTask;

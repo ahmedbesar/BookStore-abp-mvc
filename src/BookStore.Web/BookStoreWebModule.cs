@@ -8,7 +8,9 @@ using Microsoft.Extensions.Hosting;
 using BookStore.EntityFrameworkCore;
 using BookStore.Localization;
 using BookStore.MultiTenancy;
+using BookStore.Permissions;
 using BookStore.Web.Menus;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.OpenApi.Models;
 using OpenIddict.Validation.AspNetCore;
 using Volo.Abp;
@@ -111,6 +113,17 @@ public class BookStoreWebModule : AbpModule
         ConfigureNavigationServices();
         ConfigureAutoApiControllers();
         ConfigureSwaggerServices(context.Services);
+        
+        Configure<RazorPagesOptions>(options =>
+        {
+            options.Conventions.AuthorizePage("/Books/Index", BookStorePermissions.Books.Default);
+            options.Conventions.AuthorizePage("/Books/CreateModal", BookStorePermissions.Books.Create);
+            options.Conventions.AuthorizePage("/Books/EditModal", BookStorePermissions.Books.Edit);
+        });
+
+        
+        
+        
     }
 
     private void ConfigureAuthentication(ServiceConfigurationContext context)
