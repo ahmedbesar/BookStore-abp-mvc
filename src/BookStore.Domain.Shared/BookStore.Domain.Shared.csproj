@@ -29,4 +29,10 @@
     <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="8.0.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Volo.Abp.Ddd.Domain">
+      <HintPath>..\..\..\..\.nuget\packages\volo.abp.ddd.domain\8.3.0\lib\net8.0\Volo.Abp.Ddd.Domain.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
