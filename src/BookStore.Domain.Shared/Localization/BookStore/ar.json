@@ -1,0 +1,35 @@
+{
+  "Culture": "ar",
+  "Texts": {
+    "Menu:Home": "Home ar",
+    "Welcome": "Welcome ar",
+    "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP. For more information, visit abp.io. ar",
+    "Menu:BookStore": "Book Store ar",
+    "Menu:Books": "Books ar",
+    "Actions": "Actions ar",
+    "Close": "Close ar",
+    "Delete": "Delete ar",
+    "Edit": "Edit ar",
+    "PublishDate": "Publish date ar",
+    "NewBook": "New book ar",
+    "Name": "Name ar",
+    "Type": "Type ar",
+    "Price": "Price ar",
+    "CreationTime": "Creation time ar",
+    "AreYouSure": "Are you sure? ar",
+    "AreYouSureToDelete": "Are you sure you want to delete this item? ar",
+    "Enum:BookType.0": "Undefined ar",
+    "Enum:BookType.1": "Adventure ar",
+    "Enum:BookType.2": "Biography ar",
+    "Enum:BookType.3": "Dystopia ar",
+    "Enum:BookType.4": "Fantastic ar",
+    "Enum:BookType.5": "Horror ar",
+    "Enum:BookType.6": "Science ar",
+    "Enum:BookType.7": "Science fiction ar",
+    "Enum:BookType.8": "Poetry ar",
+    "Books": "Books ar",
+    "BookDeletionConfirmationMessage": "Are you sure to delete the book ar '{0}'?",
+    "SuccessfullyDeleted": "Successfully deleted! ar"
+
+  }
+}

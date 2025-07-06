@@ -1,0 +1,16 @@
+﻿using AutoMapper;
+using BookStore.Books.Dtos;
+using BookStore.Books;
+
+namespace BookStore;
+
+public class BookStoreApplicationAutoMapperProfile : Profile
+{
+    public BookStoreApplicationAutoMapperProfile()
+    {
+        CreateMap<Book, BookDto>();
+        CreateMap<CreateUpdateBookDto, Book>();
+        CreateMap<BookDto, CreateUpdateBookDto>();
+
+    }
+}
