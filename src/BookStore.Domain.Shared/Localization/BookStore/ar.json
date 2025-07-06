@@ -35,6 +35,11 @@
     "Permission:Books.Create": "Creating new books ar",
     "Permission:Books.Edit": "Editing the books ar",
     "Permission:Books.Delete": "Deleting the books ar",
-    "BookStore:00001": "There is already an author with the same name: {name} ar"
+    "BookStore:00001": "There is already an author with the same name: {name} ar",
+    "Permission:Authors": "Author Management ar",
+    "Permission:Authors.Create": "Creating new authors ar",
+    "Permission:Authors.Edit": "Editing the authors ar",
+    "Permission:Authors.Delete": "Deleting the authors ar"
+
   }
 }
