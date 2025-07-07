@@ -39,7 +39,12 @@
     "Permission:Authors": "Author Management ar",
     "Permission:Authors.Create": "Creating new authors ar",
     "Permission:Authors.Edit": "Editing the authors ar",
-    "Permission:Authors.Delete": "Deleting the authors ar"
+    "Permission:Authors.Delete": "Deleting the authors ar",
+    "Menu:Authors": "Authors ar",
+    "Authors": "Authors",
+    "AuthorDeletionConfirmationMessage": "Are you sure to delete the author '{0}'? ar",
+    "BirthDate": "Birth date ar",
+    "NewAuthor": "New author ar"
 
   }
 }

@@ -15,7 +15,6 @@ namespace BookStore.Authors.Dtos
 
         [Required]
         public DateTime BirthDate { get; set; }
-
         public string? ShortBio { get; set; }
     }
 }

@@ -1,19 +1,22 @@
-﻿@page
+@page
+
 @using BookStore.Localization
-@using BookStore.Web.Pages.Books
 @using Microsoft.Extensions.Localization
 @using Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.TagHelpers.Modal
-@model BookStore.Web.Pages.Books.EditModalModel
+@model BookStore.Web.Pages.Authors.EditModal
 @inject IStringLocalizer<BookStoreResource> L
 @{
     Layout = null;
 }
-<abp-dynamic-form abp-model="Book" asp-page="/Books/EditModal">
+<form asp-page="/Authors/EditModal">
     <abp-modal>
         <abp-modal-header title="@L["Update"].Value"></abp-modal-header>
         <abp-modal-body>
-            <abp-form-content />
+            <abp-input asp-for="Author.Id" />
+            <abp-input asp-for="Author.Name" />
+            <abp-input asp-for="Author.BirthDate" />
+            <abp-input asp-for="Author.ShortBio" />
         </abp-modal-body>
         <abp-modal-footer buttons="@(AbpModalButtons.Cancel|AbpModalButtons.Save)"></abp-modal-footer>
     </abp-modal>
-</abp-dynamic-form>
+</form>

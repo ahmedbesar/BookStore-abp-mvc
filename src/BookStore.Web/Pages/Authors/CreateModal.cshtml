@@ -1,0 +1,22 @@
+@page
+@using BookStore.Localization
+@using BookStore.Web.Pages.Authors
+@using BookStore.Web.Pages.Authors.ViewModels
+@using Microsoft.Extensions.Localization
+@using Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.TagHelpers.Modal
+@model BookStore.Web.Pages.Authors.CreateModal
+@inject IStringLocalizer<BookStoreResource> L
+@{
+    Layout = null;
+}
+<form asp-page="/Authors/CreateModal">
+    <abp-modal>
+        <abp-modal-header title="@L["NewAuthor"].Value"></abp-modal-header>
+        <abp-modal-body>
+            <abp-input asp-for="authorViewModel.Name" />
+            <abp-input asp-for="authorViewModel.BirthDate" />
+            <abp-input asp-for="authorViewModel.ShortBio" />
+            </abp-modal-body>
+        <abp-modal-footer buttons="@(AbpModalButtons.Cancel|AbpModalButtons.Save)"></abp-modal-footer>
+    </abp-modal>
+</form>

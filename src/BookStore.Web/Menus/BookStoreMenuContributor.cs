@@ -56,15 +56,20 @@ context.Menu.AddItem(
         BookStoreMenus.BookStoreMenu,
         l["Menu:BookStore"],
         icon: "fa fa-book"
-    ).AddItem(
+    )
+    .AddItem(
         new ApplicationMenuItem(
          BookStoreMenus.Books,
             l["Menu:Books"],
             url: "/Books"
-        )
-    ).RequirePermissions(BookStorePermissions.Books.Default)
+    ).RequirePermissions(BookStorePermissions.Books.Default))
+    .AddItem(
+        new ApplicationMenuItem(
+            "BooksStore.Authors",
+            l["Menu:Authors"],
+            url: "/Authors"
+        ).RequirePermissions(BookStorePermissions.Authors.Default))
 );
-
         return Task.CompletedTask;
     }
 }

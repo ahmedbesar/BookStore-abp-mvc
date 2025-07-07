@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BookStore.Authors.Dtos;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Application.Services;
 
@@ -14,9 +15,9 @@ namespace BookStore.Books.Interfaces
         BookDto,
         Guid,
         PagedAndSortedResultRequestDto, 
-        CreateUpdateBookDto> 
+        CreateUpdateBookDto>
     {
-
-
+        Task<ListResultDto<AuthorLookupDto>> GetAuthorLookupAsync();
+        
     }
 }
